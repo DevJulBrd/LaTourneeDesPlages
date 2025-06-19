@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./asset/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./asset/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Contrail";
+  src: url("./asset/fonts/ContrailOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nectarine";
+  src: url("./asset/fonts/Nectarine.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

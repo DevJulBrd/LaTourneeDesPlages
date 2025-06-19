@@ -1,0 +1,52 @@
+.bannerhome-container {
+  width: 100%;
+  height: 500px;
+}
+
+.bannerhome-vod {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.bannerhome-relative {
+  position: relative;
+  height: 500px;
+}
+
+.bannerHome-logo-container {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bannerhome-title {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Nectarine";
+  font-size: 52px;
+  width: 65%;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .bannerHome-logo-container {
+    width: 20%;
+    top: 60%;
+    left: 25%;
+  }
+
+  .bannerhome-title {
+    top: 49%;
+    left: 57%;
+    font-size: 85px;
+    width: 435px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}

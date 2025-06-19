@@ -1,0 +1,110 @@
+.coments-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+  margin-bottom: 30px;
+  border: solid 1px black;
+  border-radius: 20px;
+}
+
+.coments-slideshadow-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  border-radius: 20px;
+}
+
+.coments-slide {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+.coments-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.coments-slide.active {
+  opacity: 1;
+}
+
+.coments-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.coments-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coments-previous,
+.coments-next {
+  position: absolute;
+  bottom: 10%;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  box-shadow: 2px 147px 189px -82px rgba(0, 0, 0, 0.67) inset;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.coments-slideprogress {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.coments-slideprogress .coments-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 2px 147px 189px -82px rgba(0, 0, 0, 0.67) inset;
+  cursor: pointer;
+}
+
+.coments-slideprogress .coments-dot.active {
+  background-color: white;
+}
+
+.coments-previous {
+  left: 10px;
+}
+
+.coments-next {
+  right: 10px;
+}
+
+.coments-coment {
+  width: 95%;
+  height: 80%;
+  text-align: center;
+  font-family: "Roboto";
+  margin: auto;
+  padding-top: 5px;
+}
+
+.coments-name {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-family: "Contrail";
+}

@@ -1,0 +1,32 @@
+.partner-list-container {
+  width: 95%;
+  margin: 25px auto;
+}
+
+.partner-partner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.partner-partnercontainer {
+  width: 45%;
+  height: 260px;
+}
+
+.partner-plaquette-container {
+  width: 95%;
+  margin: 70px auto;
+}
+
+.partner-form-container {
+  width: 95%;
+  margin: 55px auto 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  .partner-partnercontainer {
+    width: 30%;
+  }
+}

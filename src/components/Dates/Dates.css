@@ -1,0 +1,10 @@
+.dates-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dates-container p {
+  margin: 0;
+  font-family: "Nectarine";
+  font-size: 18px;
+}

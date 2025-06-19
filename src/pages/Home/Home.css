@@ -1,0 +1,29 @@
+.home-dates-affiche {
+  width: 100%;
+  background-image: url(../../asset/tdp_affiche.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 565px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-dates-container {
+  width: 95%;
+  margin: auto;
+}
+
+.home-description-container {
+  width: 95%;
+  margin: auto;
+}
+
+.home-caroussel-container {
+  width: 95%;
+  margin: auto;
+}
+
+.home-coments-conatiner {
+  width: 95%;
+  margin: auto;
+}

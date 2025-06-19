@@ -1,0 +1,10 @@
+.registration-container {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.registration-container p {
+  font-family: "Contrail";
+  font-size: 35px;
+  text-align: center;
+}

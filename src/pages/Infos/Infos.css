@@ -1,0 +1,74 @@
+.infos-formInfos-container {
+  width: 95%;
+  margin: auto;
+}
+
+.infos-text-container {
+  width: 95%;
+  margin: auto;
+}
+
+.infos-rubric {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.infos-text {
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.infos-list-container {
+  list-style: none;
+  padding: 0;
+}
+
+.infos-list {
+  margin-bottom: 15px;
+}
+
+.infos-italic {
+  font-style: italic;
+}
+
+.infos-beach-name {
+  font-family: "Contrail";
+}
+
+.infos-title-spe {
+  font-family: "Contrail";
+  text-align: center;
+  font-size: 25px;
+}
+
+.infos-nectarine {
+  font-family: "Nectarine";
+}
+
+.infos-margin {
+  margin-bottom: 50px;
+}
+
+.infos-color {
+  color: #cc7b36;
+  margin-right: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+@media screen and (min-width: 1024px) {
+  .infos-rubric {
+    margin-left: 150px;
+  }
+
+  .infos-color {
+    font-size: 20px;
+  }
+}

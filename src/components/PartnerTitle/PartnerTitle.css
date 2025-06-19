@@ -1,0 +1,15 @@
+.partnerTitle-container {
+  width: 95%;
+  margin: auto;
+}
+
+.partner-partnertitle-title {
+  font-family: "Contrail";
+  text-align: center;
+  font-size: 25px;
+}
+
+.partner-partnertitle-text {
+  font-family: "Roboto";
+  text-align: center;
+}

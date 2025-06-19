@@ -1,0 +1,94 @@
+.caroussel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.caroussel-slideshadow-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  border-radius: 20px;
+}
+
+.caroussel-slide {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+.caroussel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caroussel-slide.active {
+  opacity: 1;
+}
+
+.caroussel-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caroussel-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caroussel-previous,
+.caroussel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  box-shadow: 2px 147px 189px -82px rgba(0, 0, 0, 0.67) inset;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.caroussel-slideprogress {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.caroussel-slideprogress .caroussel-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 2px 147px 189px -82px rgba(0, 0, 0, 0.67) inset;
+  cursor: pointer;
+}
+
+.caroussel-slideprogress .caroussel-dot.active {
+  background-color: white;
+}
+
+.caroussel-previous {
+  left: 10px;
+}
+
+.caroussel-next {
+  right: 10px;
+}

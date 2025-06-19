@@ -1,0 +1,27 @@
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(217deg, #cc7b36, #f1db98, #fffef8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-logo {
+  width: 190px;
+  animation: rotate 4000ms linear;
+}
+
+.loader-text {
+  font-family: "Roboto";
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
