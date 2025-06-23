@@ -194,9 +194,9 @@ function Footer() {
           <nav className="footer-contact-container">
             <ul className="footer-list">
               <li className="footer-contact">
-                tel : Margaux Lambret 0608609339
+                TEL : Margaux Lambret 0608609339
               </li>
-              <li className="footer-contact">email : tdp.beach@gmail.com</li>
+              <li className="footer-contact">EMAIL : tdp.beach@gmail.com</li>
             </ul>
           </nav>
           <nav>

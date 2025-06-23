@@ -10,7 +10,7 @@ function Banner({ img, title, mobile }) {
           <img src={img} alt="Tournée des plages" className="bannerhome-vod" />
         ) : (
           <video autoPlay loop muted className="bannerhome-vod">
-            <source src={img} type="video/mp4" />
+            <source src="https://res.cloudinary.com/dnzgn4us2/video/upload/v1750676149/short-video2_iurl3i.mov" type="video/mp4" />
           </video>
         )}
         <div className="overlay"></div>
