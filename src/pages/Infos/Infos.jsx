@@ -28,7 +28,7 @@ function Infos() {
           Initiations gratuites tous les matins ! Idéal pour découvrir le
           beach-volley ou se remettre dans le bain.
         </p>
-        <h3 className="infos-rubric">- Comment s'inscrire ?*</h3>
+        <h3 className="infos-rubric">- Comment s'inscrire ?</h3>
         <ul className="infos-text infos-list-container">
           <li className="infos-text">
             <i className="fas fa-laptop laptop-icon infos-color"></i>En ligne,

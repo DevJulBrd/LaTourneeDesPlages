@@ -8,7 +8,6 @@ import Description from "../../components/Description/Description";
 import PhotoLink from "../../components/PhotosLink/PhotosLink";
 import Title from "../../components/Title/Title";
 import PhotosLinkLink from "../../components/PhotoLinkLink/PhotoLinkLink";
-import Video from "../../asset/short-video.mp4";
 import Logo from "../../asset/logo-white.webp";
 import Coments from "../../components/Coments/Coments";
 import BannerImg from "../../asset/caroussel-7-mobil.webp";
@@ -20,7 +19,6 @@ function Home() {
   const TitleCarte = "Retrouvez nos plages ainsi que les dates";
   const TitleDescription = "Un évènement incontournable";
   const TitlePhoto = "La Tournée des Plages c'est avant tout VOUS !";
-  const BannerVod = Video;
   const BannerTitle = "La Tournee des Plages";
   const BannerLogo = Logo;
   const BannerMobile = BannerImg;
@@ -285,14 +283,13 @@ function Home() {
         />
       ) : (
         <BannerHome
-          img={BannerVod}
           title={BannerTitle}
           logo={BannerLogo}
           mibile={isMobile}
         />
       )}
       {isMobile ? (
-        <section>
+        <section className="home-dates-container">
           <Title title={TitleCarte} />
           <div className="home-dates-affiche">
             {tournementList.map(({ index, date, locBeach }) => (
