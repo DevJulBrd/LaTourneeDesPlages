@@ -111,7 +111,7 @@ function Carte() {
               className="img-plage"
             />
             <h3 className="home-cart-info-title contrail">
-              Plage des Nonnes / Plage de Suzac
+              Plage des Nonnes / Plage des Vergnes
             </h3>
             <p className="home-cart-info roboto">
               Dates : 19 Juillet / 20 Juillet / 5 Août

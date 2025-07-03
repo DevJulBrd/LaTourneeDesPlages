@@ -23,7 +23,7 @@ function Agenda() {
       locCity: "Les Mathes La Palmyre",
       locBeach: "Plage de la Palmyre",
       img: palmyreBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -33,7 +33,7 @@ function Agenda() {
       locCity: "Royan",
       locBeach: "Plage de Pontaillac",
       img: pontaillacBeach,
-      categories: "Masters",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -43,7 +43,7 @@ function Agenda() {
       locCity: "Royan",
       locBeach: "Plage de Pontaillac",
       img: pontaillacBeach,
-      categories: "Masters",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H",
     },
@@ -53,7 +53,7 @@ function Agenda() {
       locCity: "Saint-Georges-de-Didonne",
       locBeach: "Plage de la Conche Nord",
       img: stgeorgesBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -63,7 +63,7 @@ function Agenda() {
       locCity: "Saint-Palais / Vaux-sur-Mer",
       locBeach: "Plage de Nauzan",
       img: vauxBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -73,7 +73,7 @@ function Agenda() {
       locCity: "Meschers-sur-Gironde",
       locBeach: "Plage des Nonnes",
       img: meschersBeach,
-      categories: "Masters",
+      categories: ["Master Femme", "Master Homme", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -83,7 +83,7 @@ function Agenda() {
       locCity: "Meschers-sur-Gironde",
       locBeach: "Plage des Nonnes",
       img: meschersBeach,
-      categories: "Masters",
+      categories: ["Master Femme", "Master Homme"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -93,7 +93,7 @@ function Agenda() {
       locCity: "Saint-Georges-de-Didonne",
       locBeach: "Plage de la Conche Nord",
       img: stgeorgesBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -103,7 +103,7 @@ function Agenda() {
       locCity: "Les Mathes La Palmyre",
       locBeach: "Plage de la Palmyre",
       img: palmyreBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -113,7 +113,7 @@ function Agenda() {
       locCity: "Saint-Palais / Vaux-sur-Mer",
       locBeach: "Plage de Nauzan",
       img: masterNauzan,
-      categories: "Masters",
+      categories: ["Master Femme", "Master Homme", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -123,7 +123,7 @@ function Agenda() {
       locCity: "Saint-Palais / Vaux-sur-Mer",
       locBeach: "Plage de Nauzan",
       img: masterNauzan,
-      categories: "Masters",
+      categories: ["Master Femme", "Master Homme", "Masters Kids"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -133,7 +133,7 @@ function Agenda() {
       locCity: "Royan",
       locBeach: "Plage de Pontaillac",
       img: pontaillacBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -143,7 +143,7 @@ function Agenda() {
       locCity: "Saint-Palais / Vaux-sur-Mer",
       locBeach: "Plage de Nauzan",
       img: vauxBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -153,7 +153,7 @@ function Agenda() {
       locCity: "Saint-Georges-de-Didonne",
       locBeach: "Plage de la Conche Nord",
       img: masterStGeorges,
-      categories: "Masters",
+      categories: ["Master Femme", "Master Homme", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -163,7 +163,7 @@ function Agenda() {
       locCity: "Saint-Georges-de-Didonne",
       locBeach: "Plage de la Conche Nord",
       img: masterStGeorges,
-      categories: "Masters",
+      categories: ["Master Femme", "Master Homme", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -171,9 +171,9 @@ function Agenda() {
       id: "15",
       date: "5 Août",
       locCity: "Meschers-sur-Gironde",
-      locBeach: "Plage de Suzac",
+      locBeach: "Plage des Vergnes",
       img: meschersBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -183,7 +183,7 @@ function Agenda() {
       locCity: "Royan",
       locBeach: "Plage de la Grande Conche",
       img: pontaillacBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -191,9 +191,9 @@ function Agenda() {
       id: "17",
       date: "9 Août",
       locCity: "Royan",
-      locBeach: "Plage de Pontaillac",
+      locBeach: "Master de Pontaillac by Eden Villages",
       img: pontaillacBeach,
-      categories: "Masters",
+      categories: ["Master Femme", "Master Homme", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -201,9 +201,9 @@ function Agenda() {
       id: "18",
       date: "10 Août",
       locCity: "Royan",
-      locBeach: "Plage de Pontaillac",
+      locBeach: "Master de Pontaillac by Eden Villages",
       img: pontaillacBeach,
-      categories: "Masters",
+      categories: ["Master Femme", "Master Homme"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -213,7 +213,7 @@ function Agenda() {
       locCity: "Saint-Palais / Vaux-sur-Mer",
       locBeach: "Plage de Nauzan",
       img: vauxBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -223,7 +223,7 @@ function Agenda() {
       locCity: "Royan",
       locBeach: "Plage de Pontaillac",
       img: pontaillacBeach,
-      categories: "",
+      categories: ["Femmes", "Hommes", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -233,7 +233,7 @@ function Agenda() {
       locCity: "Les Mathes La Palmyre",
       locBeach: "Plage de la Palmyre",
       img: palmyreBeach,
-      categories: "Masters",
+      categories: ["Master Miste", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -243,7 +243,7 @@ function Agenda() {
       locCity: "Les Mathes La Palmyre",
       locBeach: "Plage de la Palmyre",
       img: palmyreBeach,
-      categories: "Masters",
+      categories: ["Master Miste", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },

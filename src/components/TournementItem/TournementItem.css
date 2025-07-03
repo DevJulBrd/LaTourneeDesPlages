@@ -84,9 +84,23 @@
   text-align: center;
 }
 
-.tournementItem-master {
-  color: #cc7b36;
+.master, 
+.masters {
   font-family: "Nectarine";
+}
+
+.homme,
+.hommes {
+  color: #cc7b36;
+}
+
+.femme,
+.femmes {
+  color: #f2e377;
+}
+
+.kids {
+  color: #f1db98;
 }
 
 .tournementItem-categorie-title {
