@@ -12,7 +12,7 @@ function Registration() {
     <div>
       <Banner img={BannerImg} alt={BannerAlt} title={BannerTitle} />
       <section className="registration-container">
-        <p>Ça arrive bientôt. Restez connectés !</p>
+        <neoscore-widget widgetIdentifier="ekdj763DIudci7DFsxk938EYRTGFHcvueD8ZHCi"></neoscore-widget>
       </section>
     </div>
   );
