@@ -178,7 +178,7 @@ function Home() {
       id: "15",
       date: "5 Août",
       locCity: "Meschers-sur-Gironde",
-      locBeach: "Plage de Suzac",
+      locBeach: "Plage des Vergnes",
 
       categories: "",
       timeSubscribe: "10H",
