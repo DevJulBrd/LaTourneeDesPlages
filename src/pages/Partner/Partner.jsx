@@ -7,8 +7,12 @@ import RanchoLogo from "../../asset/rancho.webp";
 import CoolongalookLogo from "../../asset/coolongalook.webp";
 import InterLogo from "../../asset/inter-marche.webp";
 import FamilyLogo from "../../asset/family-fun-park.webp";
-import SealyosLogo from "../../asset/sealyos.webp";
+import PeponnetteLogo from "../../asset/huitres-peponnette.webp";
 import GardratLogo from "../../asset/domaine-gardrat.webp";
+import BCLogo from "../../asset/bc_autos.webp";
+import ValdecLogo from "../../asset/valdec.webp";
+import EdenLogo from "../../asset/eden_villages.webp";
+import CasinoLogo from "../../asset/casino.webp";
 import RoyanLogo from "../../asset/royan.webp";
 import VauxLogo from "../../asset/vaux.webp";
 import PalmyreLogo from "../../asset/la-palmyre.webp";
@@ -16,6 +20,7 @@ import SaintGeorgesLogo from "../../asset/saint-georges.webp";
 import SaintPalaisLogo from "../../asset/saint-palais.webp";
 import MeschersLogo from "../../asset/meschers.webp";
 import RoyanAtlantiqueLogo from "../../asset/royan-atlantique.webp";
+import CharenteLogo from "../../asset/charente_maritime.webp"
 
 import Banner from "../../components/Banner/Banner";
 import PartnerTitle from "../../components/PartnerTitle/PartnerTitle";
@@ -69,9 +74,9 @@ function Partner() {
     },
     {
       id: "07",
-      name: "Sealyos",
-      logo: SealyosLogo,
-      link: "https://sealyos.fr/",
+      name: "Huîtres Peponnette",
+      logo: PeponnetteLogo,
+      link: "https://www.huitres-peponnet.com/",
     },
     {
       id: "08",
@@ -79,51 +84,81 @@ function Partner() {
       logo: GardratLogo,
       link: "https://www.domaine-gardrat.fr/accueil.html",
     },
+    {
+      id: "09",
+      name: "BC Autos",
+      logo: BCLogo,
+      link: "https://www.facebook.com/bc.automobiles.saintes/?locale=fr_FR",
+    },
+    {
+      id: "10",
+      name: "Valdec Acheminement Service",
+      logo: ValdecLogo,
+      link: "https://valdec-assistance.com/",
+    },
+    {
+      id: "11",
+      name: "Eden Vollages",
+      logo: EdenLogo,
+      link: "https://www.eden-villages.fr/?gad_source=1&gad_campaignid=22110224831&gbraid=0AAAAADnpUiqMH699mVLo-xOV3ht-n_dvD&gclid=CjwKCAjwsZPDBhBWEiwADuO6y8dKDbF88SdUZt3lotO3r1hjhiTjcXWd6DE3Y62sW_ypt6i7xgLXcxoCYiYQAvD_BwE",
+    },
+    {
+      id: "12",
+      name: "Casino Barrière",
+      logo: CasinoLogo,
+      link: "https://www.casinosbarriere.com/royan",
+    },
   ];
   const PublinPartnerTitle =
     "Nous comptons également sur l'appui et le soutien de nos collectivités";
   const PublicPartnerList = [
     {
-      id: "09",
+      id: "13",
       name: "Ville de Royan",
       logo: RoyanLogo,
       link: "https://www.ville-royan.fr/",
     },
     {
-      id: "10",
+      id: "14",
       name: "Ville de Vaux sur Mer",
       logo: VauxLogo,
       link: "https://www.vaux-sur-mer.fr/",
     },
     {
-      id: "11",
+      id: "15",
       name: "Ville de La Palmyre Les Mathes",
       logo: PalmyreLogo,
       link: "https://mairie-lesmatheslapalmyre.com/",
     },
     {
-      id: "12",
+      id: "16",
       name: "Ville de Saint-Georges de Didonne",
       logo: SaintGeorgesLogo,
       link: "https://www.saintgeorgesdedidonne.fr/",
     },
     {
-      id: "13",
+      id: "17",
       name: "Saint-Palais sur Mer",
       logo: SaintPalaisLogo,
       link: "https://www.stpalaissurmer.fr/",
     },
     {
-      id: "14",
+      id: "18",
       name: "Ville de Meschers sur Gironde",
       logo: MeschersLogo,
       link: "https://www.meschers.com/",
     },
     {
-      id: "15",
+      id: "19",
       name: "Office de Tourisme Communautaire Royan Atlantique",
       logo: RoyanAtlantiqueLogo,
       link: "https://www.royanatlantique.fr/",
+    },
+        {
+      id: "20",
+      name: "Charente-Maritime",
+      logo: CharenteLogo,
+      link: "https://la.charente-maritime.fr/",
     },
   ];
   const TitleContact =

@@ -20,6 +20,7 @@ import RoyanLogoMobil from "../../asset/royan_mobil.webp";
 import VauxLogoMobil from "../../asset/vaux_mobil.webp";
 import SaintGeorgesLogoMobil from "../../asset/saint-georges_mobil.webp";
 import SaintPalaisLogoMobil from "../../asset/saint-palais_mobil.webp";
+import CharenteLogo from "../../asset/charente_maritime.webp"
 import MeschersLogoMobil from "../../asset/meschers_mobil.webp";
 import Pirate from "../../asset/pirate.webp";
 
@@ -126,6 +127,12 @@ function Footer() {
       logo: OTCLogoMobil,
       link: "https://www.royanatlantique.fr/",
     },
+    {
+      id: "16",
+      name: "Charente-Maritime",
+      logo: CharenteLogo,
+      link: "https://la.charente-maritime.fr/",
+    },
   ];
   const CityFooter = [
     {
@@ -170,6 +177,12 @@ function Footer() {
       logo: OTCLogo,
       link: "https://www.royanatlantique.fr/",
     },
+    {
+      id: "16",
+      name: "Charente-Maritime",
+      logo: CharenteLogo,
+      link: "https://la.charente-maritime.fr/",
+    },
   ];
 
   useEffect(() => {
@@ -194,7 +207,7 @@ function Footer() {
           <nav className="footer-contact-container">
             <ul className="footer-list">
               <li className="footer-contact">
-                TEL : Margaux Lambret 0608609339
+                TEL : 0608609339
               </li>
               <li className="footer-contact">EMAIL : tdp.beach@gmail.com</li>
             </ul>
