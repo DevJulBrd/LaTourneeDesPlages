@@ -7,7 +7,7 @@ import RanchoLogo from "../../asset/rancho.webp";
 import CoolongalookLogo from "../../asset/coolongalook.webp";
 import InterLogo from "../../asset/inter-marche.webp";
 import FamilyLogo from "../../asset/family-fun-park.webp";
-import PeponnetteLogo from "../../asset/huitres-peponnette.webp";
+import PeponnetteLogo from "../../asset/huitres_peponnette.webp";
 import GardratLogo from "../../asset/domaine-gardrat.webp";
 import BCLogo from "../../asset/bc_autos.webp";
 import ValdecLogo from "../../asset/valdec.webp";
