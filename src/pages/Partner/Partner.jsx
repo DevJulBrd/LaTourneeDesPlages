@@ -70,7 +70,7 @@ function Partner() {
       id: "06",
       name: "Family Fun Park",
       logo: FamilyLogo,
-      link: "https://www.familyfunpark.fr/",
+      link: "https://www.familyfunpark.fr/", 
     },
     {
       id: "07",
