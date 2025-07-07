@@ -7,11 +7,11 @@ import RanchoLogo from "../../asset/rancho.webp";
 import CoolongalookLogo from "../../asset/coolongalook.webp";
 import InterLogo from "../../asset/inter-marche.webp";
 import FamilyLogo from "../../asset/family-fun-park.webp";
-import PeponnetteLogo from "../../asset/huitres-peponnette.webp";
+import PeponnetteLogo from "../../asset/huitres_peponnet.webp";
 import GardratLogo from "../../asset/domaine-gardrat.webp";
 import BCLogo from "../../asset/bc_autos.webp";
 import ValdecLogo from "../../asset/valdec.webp";
-import EdenLogo from "../../asset/eden_villages.webp";
+import EdenLogo from "../../asset/eden_village.webp";
 import CasinoLogo from "../../asset/casino.webp";
 import RoyanLogo from "../../asset/royan.webp";
 import VauxLogo from "../../asset/vaux.webp";
@@ -70,7 +70,7 @@ function Partner() {
       id: "06",
       name: "Family Fun Park",
       logo: FamilyLogo,
-      link: "https://www.familyfunpark.fr/",
+      link: "https://www.familyfunpark.fr/", 
     },
     {
       id: "07",
