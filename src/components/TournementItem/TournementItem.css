@@ -84,9 +84,13 @@
   text-align: center;
 }
 
-.master, 
-.masters {
+.tournementItem-category {
+  font-family: "Contrail";
+}
+
+.master-homme {
   font-family: "Nectarine";
+  color: #cc7b36;
 }
 
 .homme,
@@ -94,12 +98,24 @@
   color: #cc7b36;
 }
 
+.master-femme {
+  font-family: "Nectarine";
+  color: #f2e377;
+  width: 105px;
+}
+
 .femme,
 .femmes {
   color: #f2e377;
 }
 
-.kids {
+.master-mixte {
+  font-family: "Nectarine";
+  color: #f1db98;
+}
+
+.masters-kids {
+  font-family: "Nectarine";
   color: #f1db98;
 }
 
@@ -115,10 +131,7 @@
   margin-top: 5px;
 }
 
-.tournementItem-categorie {
-  padding: 5px;
-  border-radius: 10px;
-}
+
 
 .tournementItem-time-container {
   display: flex;

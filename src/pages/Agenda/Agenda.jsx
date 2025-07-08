@@ -233,7 +233,7 @@ function Agenda() {
       locCity: "Les Mathes La Palmyre",
       locBeach: "Plage de la Palmyre",
       img: palmyreBeach,
-      categories: ["Master Miste", "Loisirs"],
+      categories: ["Master Mixte", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
@@ -243,7 +243,7 @@ function Agenda() {
       locCity: "Les Mathes La Palmyre",
       locBeach: "Plage de la Palmyre",
       img: palmyreBeach,
-      categories: ["Master Miste", "Loisirs"],
+      categories: ["Master Mixte", "Loisirs"],
       timeSubscribe: "10H",
       timeStart: "11H"
     },
