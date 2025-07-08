@@ -21,9 +21,13 @@ function TournementItem({
             <h3 className="tournementItem-beach">{locBeach}</h3>
             <p className="tournementItem-date">{date}</p>
           </div>
-          {categories === "Masters" && (
-            <div className="tournementItem-master">Masters</div>
-          )}
+          <div className="tournementItem-categories">
+            {categories.map((cat, index) => (
+              <span key={index} className={`tournementItem-category ${cat.replace(/\s+/g, '-').toLowerCase()}`}>
+                {cat}
+              </span>
+            ))}
+          </div>
           <div className="tournementItem-animation">
             <div className="tournementItem-categorie-container">
               Déroulement de la journée
