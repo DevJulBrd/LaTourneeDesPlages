@@ -2,3 +2,13 @@
     display: flex;
     justify-content: center;
 }
+
+.neoscore-widget-container .neolist-container {
+    width: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+    .neoscore-widget-container .neolist-container {
+        width: 800px;
+    }
+}
