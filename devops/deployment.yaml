@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tdpwebsiteravb-react
+  namespace: digimeo-clients
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tdpwebsiteravb-react
+  template:
+    metadata:
+      labels:
+        app: tdpwebsiteravb-react
+    spec:
+      containers:
+        - name: tdpwebsiteravb-react-container
+          image: registry.gitlab.com/digimeo-clients/tourneedesplages:1.1.6
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 15
+            failureThreshold: 5
+      imagePullSecrets:
+        - name: tdpwebsiteravb-repo-secret
