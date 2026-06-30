@@ -11,7 +11,7 @@ function TournementItem({
   timeStart,
 }) {
   return (
-    <div className="tournementItem-container">
+    <div id={`tournament-${id}`} className="tournementItem-container">
       <div className="tournementItem-relative">
         <img src={img} alt={`${locBeach}`} className="tournementItem-img" />
         <div className="tournementItem-infos-container">

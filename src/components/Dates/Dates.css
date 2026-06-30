@@ -1,10 +1,36 @@
-.dates-container {
-  display: flex;
-  justify-content: space-between;
+.dates-link {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.dates-container p {
-  margin: 0;
+.dates-link:focus-visible {
+  outline: 2px solid #cc7b36;
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.dates-container {
+  padding: 10px 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 200ms ease;
+}
+
+.dates-link:hover .dates-container,
+.dates-link:focus .dates-container {
+  background-color: rgba(204, 123, 54, 0.55);
+}
+
+.dates-date {
+  margin: 0 0 3px 0;
   font-family: "Nectarine";
-  font-size: 18px;
+  font-size: 20px;
+  color: #cc7b36;
+}
+
+.dates-beach {
+  margin: 0;
+  font-family: "Contrail";
+  font-size: 13px;
+  color: white;
 }

@@ -6,6 +6,9 @@
   height: 565px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cc7b36 transparent;
 }
 
 .home-dates-container {

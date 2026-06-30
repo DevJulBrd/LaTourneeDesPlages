@@ -1,11 +1,15 @@
 import "./Dates.css";
 
-function Dates({ date, beach }) {
+import { Link } from "react-router-dom";
+
+function Dates({ id, date, beach }) {
   return (
-    <div className="dates-container">
-      <p className="dates-beach">{beach}</p>
-      <p className="dates-date">{date}</p>
-    </div>
+    <Link to={`/agenda#tournament-${id}`} className="dates-link">
+      <div className="dates-container">
+        <p className="dates-date">{date}</p>
+        <p className="dates-beach">{beach}</p>
+      </div>
+    </Link>
   );
 }
 

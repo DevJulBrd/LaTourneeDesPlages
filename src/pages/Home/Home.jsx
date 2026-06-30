@@ -54,7 +54,7 @@ function Home() {
           <div className="home-dates-affiche">
             {tournamentList.map(({ id, date, locBeach }) => (
               <div key={id} className="home-dates-container">
-                <Dates date={date} beach={locBeach} />
+                <Dates id={id} date={date} beach={locBeach} />
               </div>
             ))}
           </div>
