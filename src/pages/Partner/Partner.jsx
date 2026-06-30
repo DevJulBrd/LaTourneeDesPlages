@@ -35,7 +35,7 @@ function Partner() {
   const BannerAlt = "Logos de nos partenaires sur un paysage";
   const BannerTitle = "Nos Partenaires";
   const VIPPartnerTitle =
-    "Ils nous accompagnent déjà et nous sommes fiers de partager cette aventure avec eux";
+    "Ils ont cru en l'aventure — nos partenaires qui font de La Tournée des Plages un événement d'exception.";
   const VIPPartnerList = [
     {
       id: "01",
@@ -123,7 +123,7 @@ function Partner() {
     },
   ];
   const PublicPartnerTitle =
-    "Nous comptons également sur l'appui et le soutien de nos collectivités";
+    "Parce que le sport rassemble — les collectivités de Charente-Maritime nous font confiance.";
   const PublicPartnerList = [
     {
       id: "15",
@@ -184,6 +184,9 @@ function Partner() {
   return (
     <div>
       <Banner img={BannerImg} alt={BannerAlt} title={BannerTitle} />
+      <section className="partner-plaquette-container">
+        <Plaquette />
+      </section>
       <section className="partner-list-container">
         <PartnerTitle title={VIPPartnerTitle} />
         <div className="partner-partner-container">
@@ -207,9 +210,6 @@ function Partner() {
             </article>
           ))}
         </div>
-      </section>
-      <section className="partner-plaquette-container">
-        <Plaquette />
       </section>
     </div>
   );

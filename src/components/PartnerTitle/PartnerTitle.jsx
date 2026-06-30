@@ -5,7 +5,7 @@ function PartnerTitle({ title }) {
     <div className="partnerTitle-container">
       <h2 className="partner-partnertitle-title">{title}</h2>
       <p className="partner-partnertitle-text">
-        Nous vous invitons à suivre leurs activités en ligne
+        Découvrez leurs univers, visitez leurs sites.
       </p>
     </div>
   );
