@@ -1,13 +1,15 @@
+/* ── Base : mobile étroit (< 480px) — 1 colonne ── */
+
 .tournementItem-container {
-  width: 48%;
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 20px;
   scroll-margin-top: 12vh;
 }
 
 .tournementItem-relative {
   position: relative;
   width: 100%;
-  height: 435px;
+  height: 280px;
 }
 
 .tournementItem-img {
@@ -55,13 +57,13 @@
 .tournementItem-city {
   margin-top: 5px;
   font-family: "Contrail";
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .tournementItem-beach {
   font-family: "Roboto";
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 6px;
+  font-size: 14px;
 }
 
 .tournementItem-title-container {
@@ -72,8 +74,8 @@
 }
 
 .tournementItem-date {
-  font-size: 30px;
-  margin-top: 10px;
+  font-size: 22px;
+  margin-top: 6px;
   font-family: "Contrail";
 }
 
@@ -102,7 +104,6 @@
 .master-femme {
   font-family: "Nectarine";
   color: #f2e377;
-  width: 105px;
 }
 
 .femme,
@@ -130,26 +131,118 @@
   flex-wrap: wrap;
   width: 85%;
   margin-top: 5px;
+  gap: 4px;
 }
-
-
 
 .tournementItem-time-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100px;
+  height: 90px;
 }
 
 .tournementItem-time {
   width: 100%;
   text-align: center;
-  margin: 5px 0;
+  margin: 3px 0;
+  font-size: 13px;
 }
 
+/* ── 2 colonnes à partir de 480px ── */
+@media screen and (min-width: 480px) {
+  .tournementItem-container {
+    width: 48%;
+    margin-top: 25px;
+  }
+
+  .tournementItem-relative {
+    height: 320px;
+  }
+
+  .tournementItem-city {
+    font-size: 16px;
+  }
+
+  .tournementItem-beach {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .tournementItem-date {
+    font-size: 20px;
+    margin-top: 4px;
+  }
+
+  .tournementItem-time {
+    font-size: 11px;
+  }
+
+  .tournementItem-time-container {
+    height: 80px;
+  }
+}
+
+/* ── Tablette 768px ── */
+@media screen and (min-width: 768px) {
+  .tournementItem-relative {
+    height: 380px;
+  }
+
+  .tournementItem-city {
+    font-size: 20px;
+  }
+
+  .tournementItem-beach {
+    font-size: 15px;
+    margin-top: 8px;
+  }
+
+  .tournementItem-date {
+    font-size: 26px;
+    margin-top: 8px;
+  }
+
+  .tournementItem-time {
+    font-size: 13px;
+  }
+
+  .tournementItem-time-container {
+    height: 90px;
+  }
+}
+
+/* ── Desktop 1024px — 3 colonnes ── */
 @media screen and (min-width: 1024px) {
   .tournementItem-container {
     width: 32%;
+    margin-top: 30px;
+  }
+
+  .tournementItem-relative {
+    height: 435px;
+  }
+
+  .tournementItem-city {
+    font-size: 24px;
+  }
+
+  .tournementItem-beach {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .tournementItem-date {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .tournementItem-time {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .tournementItem-time-container {
+    height: 100px;
   }
 }
