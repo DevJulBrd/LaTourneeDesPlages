@@ -5,7 +5,7 @@ import BannerImage from "../../asset/banner_shop.webp";
 
 function Shop() {
   const BannerImg = BannerImage;
-  const BannerAlt = "Logos de nos partenaire sur un paysage";
+  const BannerAlt = "Bannière de la boutique Smash That Beach";
   const BannerTitle = "Boutique";
 
   return (

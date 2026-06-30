@@ -13,6 +13,8 @@ import BCLogo from "../../asset/bc_autos.webp";
 import ValdecLogo from "../../asset/valdec.webp";
 import EdenLogo from "../../asset/eden_village.webp";
 import CasinoLogo from "../../asset/casino.webp";
+import Bepi from "../../asset/bepi.webp";
+import SucreSale from "../../asset/sucresale.webp";
 import RoyanLogo from "../../asset/royan.webp";
 import VauxLogo from "../../asset/vaux.webp";
 import PalmyreLogo from "../../asset/la-palmyre.webp";
@@ -20,19 +22,18 @@ import SaintGeorgesLogo from "../../asset/saint-georges.webp";
 import SaintPalaisLogo from "../../asset/saint-palais.webp";
 import MeschersLogo from "../../asset/meschers.webp";
 import RoyanAtlantiqueLogo from "../../asset/royan-atlantique.webp";
-import CharenteLogo from "../../asset/charente_maritime.webp"
+import CharenteLogo from "../../asset/charente_maritime.webp";
+import TrembladeLogo from "../../asset/tremblade.webp";
 
 import Banner from "../../components/Banner/Banner";
 import PartnerTitle from "../../components/PartnerTitle/PartnerTitle";
 import PartnerItem from "../../components/PartnerItem/PartnerItem";
-import ContactForm from "../../components/FormPartner/FormPartner";
-import Title from "../../components/Title/Title";
 import Plaquette from "../../components/Plaquette/Plaquette";
 
 function Partner() {
   const BannerImg = BannerImage;
   const BannerAlt = "Logos de nos partenaires sur un paysage";
-  const BannerTitle = "Nos Parenaires";
+  const BannerTitle = "Nos Partenaires";
   const VIPPartnerTitle =
     "Ils nous accompagnent déjà et nous sommes fiers de partager cette aventure avec eux";
   const VIPPartnerList = [
@@ -70,7 +71,7 @@ function Partner() {
       id: "06",
       name: "Family Fun Park",
       logo: FamilyLogo,
-      link: "https://www.familyfunpark.fr/", 
+      link: "https://www.familyfunpark.fr/",
     },
     {
       id: "07",
@@ -98,7 +99,7 @@ function Partner() {
     },
     {
       id: "11",
-      name: "Eden Vollages",
+      name: "Eden Villages",
       logo: EdenLogo,
       link: "https://www.eden-villages.fr/?gad_source=1&gad_campaignid=22110224831&gbraid=0AAAAADnpUiqMH699mVLo-xOV3ht-n_dvD&gclid=CjwKCAjwsZPDBhBWEiwADuO6y8dKDbF88SdUZt3lotO3r1hjhiTjcXWd6DE3Y62sW_ypt6i7xgLXcxoCYiYQAvD_BwE",
     },
@@ -108,61 +109,77 @@ function Partner() {
       logo: CasinoLogo,
       link: "https://www.casinosbarriere.com/royan",
     },
+    {
+      id: "13",
+      name: "Bepi Conseil",
+      logo: Bepi,
+      link: "#",
+    },
+    {
+      id: "14",
+      name: "Minute Sucré Salé",
+      logo: SucreSale,
+      link: "https://mssroyan.fr/",
+    },
   ];
-  const PublinPartnerTitle =
+  const PublicPartnerTitle =
     "Nous comptons également sur l'appui et le soutien de nos collectivités";
   const PublicPartnerList = [
     {
-      id: "13",
+      id: "15",
       name: "Ville de Royan",
       logo: RoyanLogo,
       link: "https://www.ville-royan.fr/",
     },
     {
-      id: "14",
+      id: "16",
       name: "Ville de Vaux sur Mer",
       logo: VauxLogo,
       link: "https://www.vaux-sur-mer.fr/",
     },
     {
-      id: "15",
+      id: "17",
       name: "Ville de La Palmyre Les Mathes",
       logo: PalmyreLogo,
       link: "https://mairie-lesmatheslapalmyre.com/",
     },
     {
-      id: "16",
+      id: "18",
       name: "Ville de Saint-Georges de Didonne",
       logo: SaintGeorgesLogo,
       link: "https://www.saintgeorgesdedidonne.fr/",
     },
     {
-      id: "17",
+      id: "19",
       name: "Saint-Palais sur Mer",
       logo: SaintPalaisLogo,
       link: "https://www.stpalaissurmer.fr/",
     },
     {
-      id: "18",
+      id: "20",
       name: "Ville de Meschers sur Gironde",
       logo: MeschersLogo,
       link: "https://www.meschers.com/",
     },
     {
-      id: "19",
+      id: "21",
       name: "Office de Tourisme Communautaire Royan Atlantique",
       logo: RoyanAtlantiqueLogo,
       link: "https://www.royanatlantique.fr/",
     },
-        {
-      id: "20",
+    {
+      id: "22",
       name: "Charente-Maritime",
       logo: CharenteLogo,
       link: "https://la.charente-maritime.fr/",
     },
+    {
+      id: "23",
+      name: "La Tremblade",
+      logo: TrembladeLogo,
+      link: "https://www.la-tremblade.fr/",
+    },
   ];
-  const TitleContact =
-    "Vous souhaitez nous rejoindre ? Envoyez-nous un message";
 
   return (
     <div>
@@ -170,20 +187,20 @@ function Partner() {
       <section className="partner-list-container">
         <PartnerTitle title={VIPPartnerTitle} />
         <div className="partner-partner-container">
-          {VIPPartnerList.map(({ index, id, name, logo, link }) => (
+          {VIPPartnerList.map(({ id, name, logo, link }) => (
             <article
-              key={`${id}-${index}`}
+              key={id}
               className="partner-partnercontainer"
             >
               <PartnerItem name={name} logo={logo} link={link} />
             </article>
           ))}
         </div>
-        <PartnerTitle title={PublinPartnerTitle} />
+        <PartnerTitle title={PublicPartnerTitle} />
         <div className="partner-partner-container">
-          {PublicPartnerList.map(({ index, id, name, logo, link }) => (
+          {PublicPartnerList.map(({ id, name, logo, link }) => (
             <article
-              key={`${id}-${index}`}
+              key={id}
               className="partner-partnercontainer"
             >
               <PartnerItem name={name} logo={logo} link={link} />
@@ -193,10 +210,6 @@ function Partner() {
       </section>
       <section className="partner-plaquette-container">
         <Plaquette />
-      </section>
-      <section className="partner-form-container">
-        <Title title={TitleContact} />
-        <ContactForm />
       </section>
     </div>
   );

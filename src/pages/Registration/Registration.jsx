@@ -2,18 +2,18 @@ import "./Registration.css";
 
 import BannerImage from "../../asset/banner_inscription.webp";
 import Banner from "../../components/Banner/Banner";
-import Widget from "../../components/Widget/widget";
+import AppLink from "../../components/AppLink/AppLink";
 
 function Registration() {
   const BannerImg = BannerImage;
-  const BannerAlt = "Logos de nos partenaire sur un paysage";
+  const BannerAlt = "Bannière de la page d'inscription au tournoi";
   const BannerTitle = "Inscrivez-vous";
 
   return (
     <div>
       <Banner img={BannerImg} alt={BannerAlt} title={BannerTitle} />
       <section className="registration-container">
-        <Widget />
+        <AppLink />
       </section>
     </div>
   );

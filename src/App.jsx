@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Suspense Suspense fallback={<LoaderDelay />}>
+      <Suspense fallback={<LoaderDelay />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/agenda" element={<Agenda />} />

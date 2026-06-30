@@ -9,7 +9,6 @@ function TournementItem({
   categories,
   timeSubscribe,
   timeStart,
-  DJ,
 }) {
   return (
     <div className="tournementItem-container">
@@ -41,11 +40,6 @@ function TournementItem({
                 Début des matchs {timeStart}
               </p>
             </div>
-            {DJ ? (
-              <p className="tournementItem-dj">DJ set</p>
-            ) : (
-              <p className="tournementItem-none"></p>
-            )}
           </div>
         </div>
       </div>

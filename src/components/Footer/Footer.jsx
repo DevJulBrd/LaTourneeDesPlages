@@ -20,7 +20,7 @@ import RoyanLogoMobil from "../../asset/royan_mobil.webp";
 import VauxLogoMobil from "../../asset/vaux_mobil.webp";
 import SaintGeorgesLogoMobil from "../../asset/saint-georges_mobil.webp";
 import SaintPalaisLogoMobil from "../../asset/saint-palais_mobil.webp";
-import CharenteLogo from "../../asset/charente_maritime.webp"
+import CharenteLogo from "../../asset/charente_maritime.webp";
 import MeschersLogoMobil from "../../asset/meschers_mobil.webp";
 import Pirate from "../../asset/pirate.webp";
 
@@ -186,18 +186,11 @@ function Footer() {
   ];
 
   useEffect(() => {
-    const checkIfMobile = () => {
-      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-      if (
-        /android|iphone|ipad|iPod|windows phone/i.test(userAgent.toLowerCase())
-      ) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-
-    checkIfMobile();
+    const mq = window.matchMedia("(max-width: 767px)");
+    setIsMobile(mq.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
   }, []);
 
   return (
@@ -207,15 +200,15 @@ function Footer() {
           <nav className="footer-contact-container">
             <ul className="footer-list">
               <li className="footer-contact">
-                TEL : 0608609339
+                TEL : 0625856816
               </li>
-              <li className="footer-contact">EMAIL : tdp.beach@gmail.com</li>
+              <li className="footer-contact">EMAIL : tdpravb@gmail.com</li>
             </ul>
           </nav>
           <nav>
             <ul className="footer-list footer-icons-container">
               <li className="footer-icon-container">
-                <a href="https://www.facebook.com/TDP.BEACH.VOLLEY/" className="footer-icon-link">
+                <a href="https://www.facebook.com/TDP.BEACH.VOLLEY/" className="footer-icon-link" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon
                     icon={["fab", "facebook"]}
                     className="footer-icon footer-fb-icon"
@@ -224,7 +217,7 @@ function Footer() {
                 </a>
               </li>
               <li className="footer-icon-container">
-                <a href="https://www.instagram.com/tourneedesplagesbeachvolley/?hl=fr" className="footer-icon-link">
+                <a href="https://www.instagram.com/tourneedesplagesbeachvolley/?hl=fr" className="footer-icon-link" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon
                     icon={["fab", "instagram"]}
                     className="footer-icon footer-instagram-icon"
@@ -233,7 +226,7 @@ function Footer() {
                 </a>
               </li>
               <li className="footer-icon-container">
-                <a href="https://www.youtube.com/@TOURNEEDESPLAGESBEACHVOLLEY" className="footer-icon-link">
+                <a href="https://www.youtube.com/@TOURNEEDESPLAGESBEACHVOLLEY" className="footer-icon-link" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon
                     icon={["fab", "youtube"]}
                     className="footer-icon footer-yt-icon"
@@ -241,13 +234,14 @@ function Footer() {
                   <p className="footer-icon-text">Youtube</p>
                 </a>
               </li>
-              <li>
-                <a href="https://royanatlantiquevolleyball.fr/">
+              <li className="footer-icon-container">
+                <a href="https://royanatlantiquevolleyball.fr/" target="_blank" rel="noopener noreferrer">
                   <img
                     src={Pirate}
-                    alt="Logo des pirates du Royan Atantique Volley-Ball"
+                    alt="Logo des Pirates du Royan Atlantique Volley-Ball"
                     className="footer-pirate"
                   />
+                  <p className="footer-icon-text">Pirates</p>
                 </a>
               </li>
             </ul>
@@ -256,16 +250,16 @@ function Footer() {
         <nav className="footer-partners-container">
           {isMobile ? (
             <ul className="footer-list footer-partner-list">
-              {PartnerFooterMobil.map(({ index, id, name, logo, link }) => (
-                <li key={`${index}-${id}`} className="footer-partner">
+              {PartnerFooterMobil.map(({ id, name, logo, link }) => (
+                <li key={id} className="footer-partner">
                   <FooterPartner name={name} logo={logo} link={link} />
                 </li>
               ))}
             </ul>
           ) : (
             <ul className="footer-list footer-partner-list">
-              {PartnerFooter.map(({ index, id, name, logo, link }) => (
-                <li key={`${index}-${id}`} className="footer-partner">
+              {PartnerFooter.map(({ id, name, logo, link }) => (
+                <li key={id} className="footer-partner">
                   <FooterPartner name={name} logo={logo} link={link} />
                 </li>
               ))}
@@ -277,8 +271,8 @@ function Footer() {
             <div className="footer-city-wrapper">
               <div className="footer-city-container">
                 {[...CityFooterMobil, ...CityFooterMobil].map(
-                  ({ index, id, name, logo, link }) => (
-                    <div key={`${index}-${id}`} className="footer-city">
+                  ({ id, name, logo, link }, index) => (
+                    <div key={`${id}-${index}`} className="footer-city">
                       <CarousselFooter name={name} logo={logo} link={link} />
                     </div>
                   )
@@ -289,8 +283,8 @@ function Footer() {
             <div className="footer-city-wrapper">
               <div className="footer-city-container">
                 {[...CityFooter, ...CityFooter].map(
-                  ({ index, id, name, logo, link }) => (
-                    <div key={`${index}-${id}`} className="footer-city">
+                  ({ id, name, logo, link }, index) => (
+                    <div key={`${id}-${index}`} className="footer-city">
                       <CarousselFooter name={name} logo={logo} link={link} />
                     </div>
                   )

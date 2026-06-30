@@ -33,7 +33,7 @@ function Carte() {
               Plage de La Palmyre
             </h3>
             <p className="home-cart-info roboto">
-              Dates : 10 Juillet / 24 Juillet / 16 Août / 17 Août
+              Dates : 11 Juillet / 12 Juillet / 23 Juillet / 28 Juillet / 13 Août
             </p>
           </div>
           <div className="triangle1"></div>
@@ -51,8 +51,7 @@ function Carte() {
             />
             <h3 className="home-cart-info-title contrail">Plage de Nauzan</h3>
             <p className="home-cart-info roboto">
-              Dates : 17 Juillet / 26 Juillet / 27 Juillet / 31 Juillet / 12
-              Août
+              Dates : 7 Juillet / 16 Juillet / 1 Août / 2 Août / 4 Août
             </p>
           </div>
           <div className="home-cart-none triangle2"></div>
@@ -70,8 +69,8 @@ function Carte() {
               Plage de la Grande Conche / Plage de Pontaillac
             </h3>
             <p className="home-cart-info roboto">
-              Dates : 12 Juillet / 13 Juillet / 29 Juillet / 7 Août / 9 Août /
-              10 Août / 14 Août
+              Dates : 9 Juillet / 14 Juillet / 18 Juillet / 19 Juillet / 30 Juillet /
+              8 Août / 9 Août / 20 Août
             </p>
           </div>
           <div className="home-cart-none triangle4"></div>
@@ -92,7 +91,7 @@ function Carte() {
               Plage de la Conche Nord
             </h3>
             <p className="home-cart-info roboto">
-              Dates : 15 Juillet / 22 Juillet / 2 Août / 3 Août
+              Dates : 21 Juillet / 25 Juillet / 26 Juillet / 11 Août
             </p>
           </div>
           <div className="home-cart-none triangle5"></div>
@@ -114,7 +113,7 @@ function Carte() {
               Plage des Nonnes / Plage des Vergnes
             </h3>
             <p className="home-cart-info roboto">
-              Dates : 19 Juillet / 20 Juillet / 5 Août
+              Dates : 15 Août / 16 Août 
             </p>
           </div>
           <div className="home-cart-none triangle6"></div>

@@ -1,0 +1,142 @@
+/* ── Container ── */
+.app-dl-root {
+  font-family: "Roboto", sans-serif;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+ 
+/* ── Heading area ── */
+.app-dl-eyebrow {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 8px;
+}
+ 
+.app-dl-heading {
+  font-family: "Nectarine", sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+ 
+.app-dl-sub {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 2.5rem;
+}
+ 
+/* ── Buttons wrapper ── */
+.app-dl-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ 
+/* ── Individual button ── */
+.app-dl-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  background: #cc7b36;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  min-width: 200px;
+  transition:
+    transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.18s ease,
+    background 0.15s ease;
+  animation: fadeUp 0.5s both;
+}
+ 
+.app-dl-btn:nth-child(2) {
+  animation-delay: 0.12s;
+}
+ 
+.app-dl-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(204, 123, 54, 0.35);
+  background: #d98840;
+}
+ 
+.app-dl-btn:active {
+  transform: scale(0.97);
+  box-shadow: none;
+}
+ 
+/* ── Button icon ── */
+.app-dl-btn svg {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+}
+ 
+/* ── Button text ── */
+.app-dl-btn-text {
+  text-align: left;
+}
+ 
+.app-dl-btn-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  opacity: 0.82;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+ 
+.app-dl-btn-store {
+  font-family: "Contrail", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1;
+}
+ 
+/* ── Badge ── */
+.app-dl-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2rem;
+  background: #f5f5f3;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 99px;
+  padding: 6px 14px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #999;
+  animation: fadeUp 0.7s 0.4s both;
+}
+ 
+.app-dl-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #cc7b36;
+  flex-shrink: 0;
+}
+ 
+/* ── Animation ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 

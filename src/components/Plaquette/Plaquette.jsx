@@ -4,7 +4,7 @@ function Plaquette() {
   return (
     <div className="plaquette-partner">
       <a
-        href="/plaquette_sponsor.pdf"
+        href={`${process.env.PUBLIC_URL}/plaquette_sponsor.pdf`}
         target="_blank"
         rel="noopener noreferrer"
         className="plaquette-link"

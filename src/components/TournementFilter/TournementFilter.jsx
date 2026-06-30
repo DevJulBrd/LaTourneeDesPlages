@@ -8,10 +8,8 @@ function TournementFilter({ tournementList }) {
     locCity: "",
     date: "",
     categorie: "",
-    DJ: "",
   });
 
-  // Fonction pour mettre à jour les filtres
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
     setFilters((prev) => ({
@@ -20,7 +18,6 @@ function TournementFilter({ tournementList }) {
     }));
   };
 
-  // Fonction pour filtrer la liste des tournois
   const filteredTournaments = tournementList.filter((tournament) => {
     const matchCity = filters.locCity
       ? tournament.locCity === filters.locCity
@@ -29,31 +26,25 @@ function TournementFilter({ tournementList }) {
     const matchCategorie = filters.categorie
       ? tournament.categories.includes(filters.categorie)
       : true;
-    const matchDJ = filters.DJ
-      ? tournament.DJ === (filters.DJ === "true")
-      : true;
 
-    return matchCity && matchDate && matchCategorie && matchDJ;
+    return matchCity && matchDate && matchCategorie;
   });
 
-  // Réinitialiser tous les filtres
   const resetFilters = () => {
     setFilters({
       locCity: "",
       date: "",
       categorie: "",
-      DJ: "",
     });
   };
 
   return (
     <div className="tournamentFilter-container">
       <div className="filter-container">
-        {/* Libellé ajouté pour le filtre de ville */}
         <label htmlFor="filter-locCity" className="visually-hidden">Filtrer par ville</label>
         <select
           name="locCity"
-          id="filter-locCity" // Ajout de l'ID correspondant au 'for' du label
+          id="filter-locCity"
           onChange={handleFilterChange}
           value={filters.locCity}
         >
@@ -65,11 +56,10 @@ function TournementFilter({ tournementList }) {
           ))}
         </select>
 
-        {/* Libellé ajouté pour le filtre de date */}
         <label htmlFor="filter-date" className="visually-hidden">Filtrer par date</label>
         <select
           name="date"
-          id="filter-date" // Ajout de l'ID correspondant au 'for' du label
+          id="filter-date"
           onChange={handleFilterChange}
           value={filters.date}
         >
@@ -81,11 +71,10 @@ function TournementFilter({ tournementList }) {
           ))}
         </select>
 
-        {/* Libellé ajouté pour le filtre de catégorie */}
         <label htmlFor="filter-categorie" className="visually-hidden">Filtrer par catégorie</label>
         <select
           name="categorie"
-          id="filter-categorie" // Ajout de l'ID correspondant au 'for' du label
+          id="filter-categorie"
           onChange={handleFilterChange}
           value={filters.categorie}
         >
@@ -99,7 +88,6 @@ function TournementFilter({ tournementList }) {
           )}
         </select>
 
-        {/* Le bouton Reset n'est pas un champ de formulaire interactif nécessitant un label de cette manière */}
         <button onClick={resetFilters}>Reset</button>
       </div>
 
@@ -119,4 +107,3 @@ function TournementFilter({ tournementList }) {
 }
 
 export default TournementFilter;
-

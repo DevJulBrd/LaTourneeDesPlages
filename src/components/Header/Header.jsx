@@ -1,6 +1,6 @@
 import "./Header.css";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../Fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeMenu, setActiveMenu] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const lastScrollYRef = useRef(0);
 
   const openMenu = () => {
     setActiveMenu(true);
@@ -22,25 +22,20 @@ function Header() {
     setActiveMenu(false);
   };
 
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-
-    if (currentScrollY > lastScrollY && currentScrollY > 50) {
-      setIsHidden(true);
-    } else {
-      setIsHidden(false);
-    }
-
-    setLastScrollY(currentScrollY);
-  };
-
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollYRef.current && currentScrollY > 50) {
+        setIsHidden(true);
+      } else {
+        setIsHidden(false);
+      }
+      lastScrollYRef.current = currentScrollY;
     };
-  }, [lastScrollY]);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -53,7 +48,6 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const banner = document.querySelector(".overlay");
-
       if (banner) {
         const bannerBottom = banner.getBoundingClientRect().bottom;
         const threshold = window.innerHeight * 0.15;
