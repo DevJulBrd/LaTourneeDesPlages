@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../Logo/Logo";
 import LogoMobil from "../Logo/LogoMobil";
 
+const PHOTOS_URL =
+  "https://photos.google.com/share/AF1QipPNnySgUJ2fwH5JD7GMCU-lXh7I4fzC2hjv1Jl4NiLySm4llCAUMw7tqjzhyGcvLA?pli=1&key=N2dRRXVWV1F4ZnVBMWJ1TnNuYWFjUlM4WFZhaWtR";
+
 function Header() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -102,13 +105,15 @@ function Header() {
                   <Link to="/inscriptions" className="link" onClick={closeMenu}>
                     Inscriptions
                   </Link>
-                  <Link
-                    to="/boutique"
-                    className="link boutique-link"
+                  <a
+                    href={PHOTOS_URL}
+                    className="link photos-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={closeMenu}
                   >
-                    Boutique
-                  </Link>
+                    Photos
+                  </a>
                 </div>
               </div>
             ) : (
@@ -144,9 +149,14 @@ function Header() {
               <Link to="/inscriptions" className="link">
                 Inscriptions
               </Link>
-              <Link to="/boutique" className="link boutique-link">
-                Boutique
-              </Link>
+              <a
+                href={PHOTOS_URL}
+                className="link photos-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Photos
+              </a>
             </div>
           </nav>
         </div>

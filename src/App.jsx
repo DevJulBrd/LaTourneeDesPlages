@@ -11,7 +11,6 @@ const Agenda = lazy(() => import("./pages/Agenda/Agenda"));
 const Infos = lazy(() => import("./pages/Infos/Infos"));
 const Partner = lazy(() => import("./pages/Partner/Partner"));
 const Registration = lazy(() => import("./pages/Registration/Registration"));
-const Shop = lazy(() => import("./pages/Shop/Shop"));
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
           <Route path="/infospratiques" element={<Infos />} />
           <Route path="/nospartenaires" element={<Partner />} />
           <Route path="/inscriptions" element={<Registration />} />
-          <Route path="/boutique" element={<Shop />} />
         </Routes>
       </Suspense>
       <Footer />
