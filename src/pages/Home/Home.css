@@ -1,9 +1,11 @@
 .home-dates-affiche {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  aspect-ratio: 495 / 700;
   background-image: url(../../asset/tdp_affiche.webp);
   background-position: center;
   background-repeat: no-repeat;
-  height: 565px;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
