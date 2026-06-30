@@ -21,7 +21,7 @@ function PhotoLink() {
         <div className="carousel-relative carousel1">
           <div className="carousel-track">
             {carouselimg1.map((img, index) => (
-              <img key={index} src={img} alt="Photo du tournoi de beach-volley" />
+              <img key={index} src={img} alt="Tournoi de beach-volley" />
             ))}
           </div>
           <div className="carousel-borderleft"></div>
@@ -32,7 +32,7 @@ function PhotoLink() {
         <div className="carousel-relative carousel2">
           <div className="carousel-track">
             {carouselimg2.map((img, index) => (
-              <img key={index} src={img} alt="Photo du tournoi de beach-volley" />
+              <img key={index} src={img} alt="Tournoi de beach-volley" />
             ))}
           </div>
           <div className="carousel-borderleft"></div>
@@ -43,7 +43,7 @@ function PhotoLink() {
         <div className="carousel-relative carousel3">
           <div className="carousel-track">
             {carouselimg3.map((img, index) => (
-              <img key={index} src={img} alt="Photo du tournoi de beach-volley" />
+              <img key={index} src={img} alt="Tournoi de beach-volley" />
             ))}
           </div>
           <div className="carousel-borderleft"></div>

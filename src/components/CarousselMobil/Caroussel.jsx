@@ -41,7 +41,7 @@ function Caroussel() {
             }`}
             key={index}
           >
-            <img src={image} alt="Photo du tournoi de beach-volley" />
+            <img src={image} alt="Tournoi de beach-volley" />
           </div>
         ))}
       </div>
