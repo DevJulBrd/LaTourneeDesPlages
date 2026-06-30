@@ -11,8 +11,8 @@ function Infos() {
   const BannerAlt = "Photo de la plage avec les logos de nos partenaires";
   const BannerTitle = "Informations Pratiques";
   const PriceTitle = "Tarifs & Inscriptions*";
-  const SnackTitle = "Se restaurer sur place";
-  const LocTitle = "Comment s’y rendre ? Nos plages étapes :";
+  const SnackTitle = "La pause gourmande";
+  const LocTitle = "Toutes les adresses de la Tournée";
   return (
     <div>
       <Banner img={BannerImg} alt={BannerAlt} title={BannerTitle} />
@@ -97,11 +97,16 @@ function Infos() {
             puis rejoindre la plage à pied en descendant les marches menant à
             l’accès Bikki Beach (45.578402, -1.010390)
           </li>
-          <li className="infos-text infos-list infos-margin">
+          <li className="infos-text infos-list">
             <FontAwesomeIcon icon={["fas", "thumbtack"]} className="pin-icon infos-color" />
             <span className="infos-beach-name">Plage des Vergnes</span> <br />
             Côté restaurant Baignassout, accès via l’Avenue des Vergnes,
             (parking gratuit au bout de l’avenue) (45.573843, -1.006428)
+          </li>
+          <li className="infos-text infos-list infos-margin">
+            <FontAwesomeIcon icon={["fas", "thumbtack"]} className="pin-icon infos-color" />
+            <span className="infos-beach-name">Plage de la Cêpe</span> <br />
+            Accès via l’Avenue de la Cêpe, (45.474843, -1.094128)
           </li>
         </ul>
         <h2 className="infos-title-spe">

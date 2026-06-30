@@ -17,13 +17,12 @@ import tournamentList from "../../data/tournamentList";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
-  const TitleCarte = "Retrouvez nos plages ainsi que les dates";
-  const TitleDescription = "Un évènement incontournable";
-  const TitlePhoto = "La Tournée des Plages c'est avant tout VOUS !";
+  const TitleCarte = "Où et quand nous retrouver ?";
+  const TitlePhoto = "Vos moments, vos souvenirs, votre Tournée";
   const BannerTitle = "La Tournée des Plages";
   const BannerLogo = Logo;
   const BannerMobile = BannerImg;
-  const ComentsTitle = "Ils ont donné leurs avis";
+  const ComentsTitle = "Ils sont venus, ils ont joué, ils ont aimé";
 
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 767px)");
@@ -68,8 +67,7 @@ function Home() {
       )}
       {isMobile ? (
         <section className="home-description-container">
-          <Title title={TitleDescription} />
-          <Description />
+            <Description />
         </section>
       ) : (
         <section className="home-description-container">
