@@ -1,25 +1,27 @@
 import "./PhotoLink.css";
 
-import Carousel1 from "../../asset/caroussel-1.webp";
-import Carousel2 from "../../asset/caroussel-2.webp";
-import Carousel3 from "../../asset/caroussel-3.webp";
-import Carousel4 from "../../asset/caroussel-4.webp";
-import Carousel5 from "../../asset/caroussel-5.webp";
-import Carousel6 from "../../asset/caroussel-6.webp";
-import Carousel7 from "../../asset/caroussel-7.webp";
+import Photo01 from "../../asset/photo-01.webp";
+import Photo02 from "../../asset/photo-02.webp";
+import Photo03 from "../../asset/photo-03.webp";
+import Photo04 from "../../asset/photo-04.webp";
+import Photo05 from "../../asset/photo-05.webp";
+import Photo06 from "../../asset/photo-06.webp";
+import Photo07 from "../../asset/photo-07.webp";
+import Photo08 from "../../asset/photo-08.webp";
+import Photo09 from "../../asset/photo-09.webp";
 
 function PhotoLink() {
-  const carouselimg1 = [Carousel1, Carousel2, Carousel3, Carousel1];
-  const carouselimg2 = [Carousel4, Carousel5, Carousel6, Carousel4];
-  const carouselimg3 = [Carousel7, Carousel1, Carousel6, Carousel7];
+  const carouselimg1 = [Photo01, Photo02, Photo03, Photo01];
+  const carouselimg2 = [Photo04, Photo05, Photo06, Photo04];
+  const carouselimg3 = [Photo07, Photo08, Photo09, Photo07];
 
   return (
     <section className="carousel-container">
       <div className="carousel-relative-container">
         <div className="carousel-relative carousel1">
           <div className="carousel-track">
-            {[...carouselimg1].map((img, index) => (
-              <img key={index} src={img} alt={`Slide ${(index % 10) + 1}`} />
+            {carouselimg1.map((img, index) => (
+              <img key={index} src={img} alt="Photo du tournoi de beach-volley" />
             ))}
           </div>
           <div className="carousel-borderleft"></div>
@@ -29,8 +31,8 @@ function PhotoLink() {
         </div>
         <div className="carousel-relative carousel2">
           <div className="carousel-track">
-            {[...carouselimg2].map((img, index) => (
-              <img key={index} src={img} alt={`Slide ${(index % 10) + 1}`} />
+            {carouselimg2.map((img, index) => (
+              <img key={index} src={img} alt="Photo du tournoi de beach-volley" />
             ))}
           </div>
           <div className="carousel-borderleft"></div>
@@ -40,8 +42,8 @@ function PhotoLink() {
         </div>
         <div className="carousel-relative carousel3">
           <div className="carousel-track">
-            {[...carouselimg3].map((img, index) => (
-              <img key={index} src={img} alt={`Slide ${(index % 10) + 1}`} />
+            {carouselimg3.map((img, index) => (
+              <img key={index} src={img} alt="Photo du tournoi de beach-volley" />
             ))}
           </div>
           <div className="carousel-borderleft"></div>

@@ -1,12 +1,12 @@
 import "./Caroussel.css";
 
 import { useEffect, useState } from "react";
-import Carousel1 from "../../asset/caroussel-1_mobil.webp";
-import Carousel2 from "../../asset/caroussel-2_mobil.webp";
-import Carousel3 from "../../asset/caroussel-3_mobil.webp";
-import Carousel4 from "../../asset/caroussel-4_mobil.webp";
+import Photo01 from "../../asset/photo-01.webp";
+import Photo04 from "../../asset/photo-04.webp";
+import Photo07 from "../../asset/photo-07.webp";
+import Photo10 from "../../asset/photo-10.webp";
 
-const images = [Carousel1, Carousel2, Carousel3, Carousel4];
+const images = [Photo01, Photo04, Photo07, Photo10];
 
 function Caroussel() {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -41,7 +41,7 @@ function Caroussel() {
             }`}
             key={index}
           >
-            <img src={image} alt={`Slide ${index}`} />
+            <img src={image} alt="Photo du tournoi de beach-volley" />
           </div>
         ))}
       </div>

@@ -26,13 +26,14 @@
 
 .carousel-track {
   display: flex;
-  width: 300px;
+  min-width: max-content;
   animation: scroll 10000ms linear infinite;
 }
 
 .carousel-track img {
   width: 285px;
   height: 357px;
+  flex-shrink: 0;
   object-fit: cover;
   margin-right: 15px;
 }
@@ -42,7 +43,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-770px);
+    transform: translateX(-900px);
   }
 }
 
@@ -105,4 +106,121 @@
 
 .carousel3 {
   transform: rotate(20deg);
+}
+
+/* Medium desktop (1024px – 1279px) */
+@media (max-width: 1279px) {
+  .carousel-container {
+    margin: 143px auto 0;
+  }
+
+  .carousel-relative {
+    width: 215px;
+    height: 317px;
+    padding: 11px 11px 15px 11px;
+  }
+
+  .carousel-track img {
+    width: 215px;
+    height: 269px;
+    margin-right: 11px;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-678px);
+    }
+  }
+
+  .carousel-borderleft {
+    width: 11px;
+    height: 269px;
+    top: 11px;
+  }
+
+  .carousel-borderright {
+    width: 11px;
+    height: 269px;
+    top: 11px;
+  }
+
+  .carousel-bordertop {
+    width: 215px;
+    height: 11px;
+    left: 11px;
+  }
+
+  .carousel-borderbottom {
+    width: 215px;
+    height: 53px;
+    top: 280px;
+    left: 11px;
+    font-size: 32px;
+  }
+
+  .carousel2 {
+    top: -66px;
+  }
+}
+
+/* Small desktop / tablet landscape (768px – 1023px) */
+@media (max-width: 1023px) {
+  .carousel-container {
+    width: 90%;
+    margin: 107px auto 0;
+  }
+
+  .carousel-relative {
+    width: 160px;
+    height: 236px;
+    padding: 8px 8px 11px 8px;
+  }
+
+  .carousel-track img {
+    width: 160px;
+    height: 200px;
+    margin-right: 8px;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-504px);
+    }
+  }
+
+  .carousel-borderleft {
+    width: 8px;
+    height: 200px;
+    top: 8px;
+  }
+
+  .carousel-borderright {
+    width: 8px;
+    height: 200px;
+    top: 8px;
+  }
+
+  .carousel-bordertop {
+    width: 160px;
+    height: 8px;
+    left: 8px;
+  }
+
+  .carousel-borderbottom {
+    width: 160px;
+    height: 39px;
+    top: 208px;
+    left: 8px;
+    font-size: 24px;
+  }
+
+  .carousel2 {
+    top: -49px;
+  }
 }
