@@ -1,7 +1,7 @@
 import "./TournementItem.css";
 
-const NEOSCORE_APP_STORE = "TODO_REMPLACER_PAR_LIEN_APP_STORE";
-const NEOSCORE_PLAY_STORE = "TODO_REMPLACER_PAR_LIEN_GOOGLE_PLAY";
+const NEOSCORE_APP_STORE = "https://apps.apple.com/fr/app/neoscore/id6747252671";
+const NEOSCORE_PLAY_STORE = "https://play.google.com/store/apps/details?id=com.digimeo.neoscore&utm_source=emea_Med";
 
 function TournementItem({
   id,
