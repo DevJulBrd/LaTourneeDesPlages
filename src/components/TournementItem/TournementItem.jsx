@@ -1,5 +1,8 @@
 import "./TournementItem.css";
 
+const NEOSCORE_APP_STORE = "TODO_REMPLACER_PAR_LIEN_APP_STORE";
+const NEOSCORE_PLAY_STORE = "TODO_REMPLACER_PAR_LIEN_GOOGLE_PLAY";
+
 function TournementItem({
   id,
   date,
@@ -9,6 +12,7 @@ function TournementItem({
   categories,
   timeSubscribe,
   timeStart,
+  registrationLinks,
 }) {
   return (
     <div id={`tournament-${id}`} className="tournementItem-container">
@@ -20,13 +24,57 @@ function TournementItem({
             <h3 className="tournementItem-beach">{locBeach}</h3>
             <p className="tournementItem-date">{date}</p>
           </div>
+
           <div className="tournementItem-categories">
-            {categories.map((cat, index) => (
-              <span key={index} className={`tournementItem-category ${cat.replace(/\s+/g, '-').toLowerCase()}`}>
-                {cat}
-              </span>
-            ))}
+            {categories.map((cat, index) => {
+              const link = registrationLinks?.[cat];
+              return link ? (
+                <a
+                  key={index}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`tournementItem-category tournementItem-register-link ${cat.replace(/\s+/g, "-").toLowerCase()}`}
+                >
+                  {cat}
+                </a>
+              ) : (
+                <span
+                  key={index}
+                  className={`tournementItem-category ${cat.replace(/\s+/g, "-").toLowerCase()}`}
+                >
+                  {cat}
+                </span>
+              );
+            })}
           </div>
+
+          {registrationLinks && (
+            <div className="tournementItem-neoscore">
+              <p className="tournementItem-neoscore-text">
+                Inscris-toi via l'app Neoscore
+              </p>
+              <div className="tournementItem-neoscore-stores">
+                <a
+                  href={NEOSCORE_APP_STORE}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tournementItem-store-link"
+                >
+                  App Store
+                </a>
+                <a
+                  href={NEOSCORE_PLAY_STORE}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tournementItem-store-link"
+                >
+                  Google Play
+                </a>
+              </div>
+            </div>
+          )}
+
           <div className="tournementItem-animation">
             <div className="tournementItem-categorie-container">
               Déroulement de la journée

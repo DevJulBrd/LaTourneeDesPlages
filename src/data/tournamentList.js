@@ -18,6 +18,13 @@ const beachImageMap = {
   "Restez connecté": stgeorges,
 };
 
+const BASE = "https://link.prod.neoscore.fr/competition.php?competitionId=";
+const neo = (h, f, l) => ({
+  Hommes: `${BASE}${h}`,
+  Femmes: `${BASE}${f}`,
+  Loisirs: `${BASE}${l}`,
+});
+
 const tournamentList = [
   {
     id: "00",
@@ -28,6 +35,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(2, 3, 4),
   },
   {
     id: "01",
@@ -38,6 +46,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(5, 6, 7),
   },
   {
     id: "02",
@@ -68,6 +77,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(8, 9, 10),
   },
   {
     id: "05",
@@ -78,6 +88,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(11, 12, 13),
   },
   {
     id: "06",
@@ -108,6 +119,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(16, 17, 18),
   },
   {
     id: "09",
@@ -118,6 +130,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(22, 20, 21),
   },
   {
     id: "10",
@@ -148,6 +161,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(31, 23, 24),
   },
   {
     id: "13",
@@ -158,6 +172,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(25, 26, 27),
   },
   {
     id: "14",
@@ -188,6 +203,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(28, 29, 30),
   },
   {
     id: "17",
@@ -228,6 +244,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(34, 35, 36),
   },
   {
     id: "21",
@@ -238,6 +255,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(43, 44, 45),
   },
   {
     id: "22",
@@ -268,6 +286,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(46, 47, 48),
   },
   {
     id: "25",
@@ -278,6 +297,7 @@ const tournamentList = [
     categories: ["Femmes", "Hommes", "Loisirs"],
     timeSubscribe: "10H",
     timeStart: "11H",
+    registrationLinks: neo(49, 50, 51),
   },
   {
     id: "26",
