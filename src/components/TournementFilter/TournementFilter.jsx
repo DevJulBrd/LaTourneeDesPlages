@@ -91,6 +91,38 @@ function TournementFilter({ tournementList }) {
         <button onClick={resetFilters}>Reset</button>
       </div>
 
+      <div className="neoscore-info">
+        <div className="neoscore-info-header">
+          <span className="neoscore-info-title">Inscriptions en ligne</span>
+          <span className="neoscore-info-subtitle">via l'app Neoscore</span>
+        </div>
+        <p className="neoscore-info-text">
+          Clique sur les catégories&nbsp;
+          <span className="neoscore-badge hommes">Hommes</span>
+          <span className="neoscore-badge femmes">Femmes</span>
+          <span className="neoscore-badge loisirs">Loisirs</span>
+          &nbsp;pour t'inscrire directement dans l'application.
+        </p>
+        <div className="neoscore-info-stores">
+          <a
+            href="https://apps.apple.com/fr/app/neoscore/id6747252671"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="neoscore-store-link"
+          >
+            ⬇ App Store
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.digimeo.neoscore&utm_source=emea_Med"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="neoscore-store-link"
+          >
+            ⬇ Google Play
+          </a>
+        </div>
+      </div>
+
       <div className="tournamentFilter-list">
         {filteredTournaments.length > 0 ? (
           filteredTournaments.map((tournament) => (

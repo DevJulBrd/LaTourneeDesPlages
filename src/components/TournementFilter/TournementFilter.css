@@ -59,6 +59,106 @@
   transform: scale(1.2);
 }
 
+.neoscore-info {
+  margin: 0 0 24px 0;
+  padding: 18px 22px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a1f0e 100%);
+  border-radius: 14px;
+  border: 1px solid rgba(204, 123, 54, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.neoscore-info-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.neoscore-info-title {
+  font-family: "Contrail";
+  font-size: 20px;
+  color: #cc7b36;
+  letter-spacing: 0.5px;
+}
+
+.neoscore-info-subtitle {
+  font-family: "Roboto";
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  font-style: italic;
+}
+
+.neoscore-info-text {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.neoscore-badge {
+  font-family: "Contrail";
+  font-size: 12px;
+  padding: 2px 9px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+}
+
+.neoscore-badge.hommes {
+  background-color: #cc7b36;
+  color: white;
+}
+
+.neoscore-badge.femmes {
+  background-color: #f2e377;
+  color: black;
+}
+
+.neoscore-badge.loisirs {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.neoscore-info-stores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.neoscore-store-link {
+  font-family: "Contrail";
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(204, 123, 54, 0.85);
+  border: 1px solid #cc7b36;
+  border-radius: 8px;
+  padding: 6px 14px;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.neoscore-store-link:hover,
+.neoscore-store-link:focus {
+  background-color: #cc7b36;
+  transform: scale(1.05);
+  outline: 2px solid rgba(204, 123, 54, 0.6);
+  outline-offset: 2px;
+}
+
 .tournamentFilter-none {
   font-family: "Roboto";
 }
